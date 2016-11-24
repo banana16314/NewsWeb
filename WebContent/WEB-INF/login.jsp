@@ -1,3 +1,5 @@
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +32,7 @@
                 <div class="bottom">
                     <div class="remember"><input type="checkbox"/><span>记住我</span></div>
                     <input type="submit" value="登录">
-                    <a href="register.html">没有账号，点击注册</a>
+                    <a href="register.jsp">没有账号，点击注册</a>
                 </div>
             </form>
         </div>

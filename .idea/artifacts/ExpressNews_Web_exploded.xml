@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ExpressNews:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ExpressNews_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ExpressNews/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ExpressNews" />
+          <element id="library" level="project" name="apache-tomcat-9.0.0" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="struts-core" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

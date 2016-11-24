@@ -1,7 +1,9 @@
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
 <head>
-<title>国外</title>
+<title>娱乐</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -47,7 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- header-section-starts-here -->
 	<div class="header-bottom">
 			<div class="logo text-center">
-				<a href="index.html"><img src="images/logo.jpg" alt="" /></a>
+				<a href="index.jsp"><img src="images/logo.jpg" alt="" /></a>
 			</div>
 			<div class="navigation">
 				<nav class="navbar navbar-default" role="navigation">
@@ -65,15 +67,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">首页</a></li>
-					<li><a href="home.html">国内</a></li>
-					<li><a href="sports.html">运动</a></li>
-					<li><a href="entertainment.html">娱乐</a>
-					<li><a href="fashion.html">时尚</a></li>
-					<li><a href="business.html">财经</a></li>
-					<li><a href="technology.html">科技</a></li>
-					<li><a href="mil.html">军事</a></li>
-					<li><a href="borad.html">国外</a></li>
+					<li class="active"><a href="index.jsp">首页</a></li>
+					<li><a href="home.jsp">国内</a></li>
+					<li><a href="sports.jsp">运动</a></li>
+					<li><a href="entertainment.jsp">娱乐</a>
+					<li><a href="fashion.jsp">时尚</a></li>
+					<li><a href="business.jsp">财经</a></li>
+					<li><a href="technology.jsp">科技</a></li>
+					<li><a href="mil.jsp">军事</a></li>
+					<li><a href="board.jsp">国外</a></li>
 					<div class="clearfix"></div>
 				</ul>
 				<div class="search">
@@ -110,8 +112,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h2>头版头条</h2>
 			</div>
 			<div class="marquee">
-				<div class="marquee1"><a class="breaking" href="single.html">>>The standard chunk of Lorem Ipsum used since the 1500s is reproduced..</a></div>
-				<div class="marquee2"><a class="breaking" href="single.html">>>At vero eos et accusamus et iusto qui blanditiis praesentium voluptatum deleniti atque..</a></div>
+				<div class="marquee1"><a class="breaking" href="single.jsp">>>The standard chunk of Lorem Ipsum used since the 1500s is reproduced..</a></div>
+				<div class="marquee2"><a class="breaking" href="single.jsp">>>At vero eos et accusamus et iusto qui blanditiis praesentium voluptatum deleniti atque..</a></div>
 				<div class="clearfix"></div>
 			</div>
 			<div class="clearfix"></div>
@@ -126,22 +128,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="main-body">
 		<div class="wrap">
 		<ol class="breadcrumb">
-			  <li><a href="index.html">首页</a></li>
-			  <li class="active">国外</li>
+			  <li><a href="index.jsp">首页</a></li>
+			  <li class="active">娱乐</li>
 			</ol>
 			<div class="col-md-8 content-left">
-			<div class="articles sports">
+			<div class="slider">
+					<div class="callbacks_container">
+						<ul class="rslides" id="slider">
+							<li>
+								<img src="images/e1.jpg" alt="">
+								<div class="caption">
+									<a href="single.jsp">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a>
+								</div>
+							</li>
+							<li>
+								<img src="images/e2.jpg" alt="">
+								<div class="caption">
+									<a href="single.jsp">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</a>
+								</div>
+							</li>
+							<li>
+								<img src="images/e3.jpg" alt="">
+								<div class="caption">
+									<a href="single.jsp">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			<div class="articles entertainment">
 					<header>
-						<h3 class="title-head">国外</h3>
+						<h3 class="title-head">娱乐</h3>
 					</header>
 				<div class="article">
 					<div class="article-left">
-						<a href="single.html"></a>
+						<a href="single.jsp"></a>
 						<iframe width="100%" src="images/article1.jpg" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="article-right">
 						<div class="article-title">
-							<a class="title" href="single.html"> The section of the mass media industry that focuses on
+							<a class="title" href="single.jsp"> The section of the mass media industry that focuses on
 								presenting</a>
 						</div>
 					</div>
@@ -149,12 +175,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="article">
 					<div class="article-left">
-						<a href="single.html"></a>
+						<a href="single.jsp"></a>
 						<iframe width="100%" src="images/article4.jpg" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="article-right">
 						<div class="article-title">
-							<a class="title" href="single.html">Contrary to popular belief, Lorem Ipsum is not simply
+							<a class="title" href="single.jsp">Contrary to popular belief, Lorem Ipsum is not simply
 								random</a>
 						</div>
 					</div>
@@ -163,12 +189,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				<div class="article">
 					<div class="article-left">
-						<a href="single.html"></a>
+						<a href="single.jsp"></a>
 						<iframe width="100%" src="images/article3.jpg" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="article-right">
 						<div class="article-title">
-							<a class="title" href="single.html">There are many variations that focuses on presenting</a>
+							<a class="title" href="single.jsp">There are many variations that focuses on presenting</a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -176,36 +202,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				<div class="article">
 					<div class="article-left">
-						<a href="single.html"></a>
+						<a href="single.jsp"></a>
 						<iframe width="100%" src="images/article4.jpg" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="article-right">
 						<div class="article-title">
-							<a class="title" href="single.html">There are many variations that focuses on presenting</a>
+							<a class="title" href="single.jsp">There are many variations that focuses on presenting</a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
 				</div>
+
 				<div class="article">
 					<div class="article-left">
-						<a href="single.html"></a>
+						<a href="single.jsp"></a>
 						<iframe width="100%" src="images/article4.jpg" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="article-right">
 						<div class="article-title">
-							<a class="title" href="single.html">There are many variations that focuses on presenting</a>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="article">
-					<div class="article-left">
-						<a href="single.html"></a>
-						<iframe width="100%" src="images/article4.jpg" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="article-right">
-						<div class="article-title">
-							<a class="title" href="single.html">There are many variations that focuses on presenting</a>
+							<a class="title" href="single.jsp">There are many variations that focuses on presenting</a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -217,84 +232,84 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</header>
 					<div class="life-style-grids">
 						<div class="life-style-left-grid">
-							<a href="single.html"><img src="images/l1.jpg" alt="" /></a>
-							<a class="title" href="single.html">It is a long established fact that a reader will be distracted.</a>
+							<a href="single.jsp"><img src="images/l1.jpg" alt="" /></a>
+							<a class="title" href="single.jsp">It is a long established fact that a reader will be distracted.</a>
 						</div>
 						<div class="life-style-right-grid">
-							<a href="single.html"><img src="images/l2.jpg" alt="" /></a>
-							<a class="title" href="single.html">There are many variations of passages of Lorem Ipsum available.</a>
+							<a href="single.jsp"><img src="images/l2.jpg" alt="" /></a>
+							<a class="title" href="single.jsp">There are many variations of passages of Lorem Ipsum available.</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="life-style-grids">
 						<div class="life-style-left-grid">
-							<a href="single.html"><img src="images/l3.jpg" alt="" /></a>
-							<a class="title" href="single.html">Contrary to popular belief, Lorem Ipsum is not simply random text.</a>
+							<a href="single.jsp"><img src="images/l3.jpg" alt="" /></a>
+							<a class="title" href="single.jsp">Contrary to popular belief, Lorem Ipsum is not simply random text.</a>
 						</div>
 						<div class="life-style-right-grid">
-							<a href="single.html"><img src="images/l4.jpg" alt="" /></a>
-							<a class="title" href="single.html">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</a>
+							<a href="single.jsp"><img src="images/l4.jpg" alt="" /></a>
+							<a class="title" href="single.jsp">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
-				<div class="photos">
+					<div class="photos">
 					<header>
 						<h3 class="title-head">照片新闻</h3>
 					</header>
-					<div class="course_demo1">
-						<ul id="flexiselDemo">
-							<li>
-								<a href="single.html"><img src="images/eg4.jpg" alt="" /></a>
-							</li>
-							<li>
-								<a href="single.html"><img src="images/eg3.jpg" alt="" /></a>
-							</li>
-							<li>
-								<a href="single.html"><img src="images/eg2.jpg" alt="" /></a>
-							</li>
-							<li>
-								<a href="single.html"><img src="images/eg1.jpg" alt="" /></a>
-							</li>
-						</ul>
-					</div>
-					<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-					<script type="text/javascript">
-						$(window).load(function() {
-							$("#flexiselDemo").flexisel({
-								visibleItems: 4,
-								animationSpeed: 1000,
-								autoPlay: true,
-								autoPlaySpeed: 3000,
-								pauseOnHover: true,
-								enableResponsiveBreakpoints: true,
-								responsiveBreakpoints: {
-									portrait: {
-										changePoint:480,
-										visibleItems: 2
-									},
-									landscape: {
-										changePoint:640,
-										visibleItems: 2
-									},
-									tablet: {
-										changePoint:768,
-										visibleItems: 3
+					 <div class="course_demo1">
+								  <ul id="flexiselDemo">	
+									 <li>
+										<a href="single.jsp"><img src="images/eg4.jpg" alt="" /></a>
+									 </li>
+									 <li>
+										<a href="single.jsp"><img src="images/eg3.jpg" alt="" /></a>
+									  </li>	
+									 <li>
+										<a href="single.jsp"><img src="images/eg2.jpg" alt="" /></a>
+									 </li>	
+									 <li>
+										<a href="single.jsp"><img src="images/eg1.jpg" alt="" /></a>
+									 </li>	
+								 </ul>
+							 </div>
+							 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+								<script type="text/javascript">
+							 $(window).load(function() {
+								$("#flexiselDemo").flexisel({
+									visibleItems: 4,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:480,
+											visibleItems: 2
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems: 2
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 3
+										}
 									}
-								}
-							});
+								});
+								
+							 });
+							  </script>
+							 <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+					</div>
 
-						});
-					</script>
-					<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 				</div>
-
-			</div>
 			<div class="col-md-4 side-bar">
 				<div class="first_half">
 					<div class="newsletter">
 						<h1 class="side-title-head">用户相关</h1>
-						<p class="sign"><a href="login.html">登录</a>，<a href="register.html">注册</a></p>
+						<p class="sign"><a href="login.jsp">登录</a>，<a href="register.jsp">注册</a></p>
 					</div>
 					<div class="list_vertical">
 						<section class="accordation_menu">
@@ -308,40 +323,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="popular-post-grids">
 												<div class="popular-post-grid">
 													<div class="post-img">
-														<a href="single.html"><img src="images/bus2.jpg" alt=""/></a>
+														<a href="single.jsp"><img src="images/bus2.jpg" alt=""/></a>
 													</div>
 													<div class="post-text">
-														<a class="pp-title" href="single.html"> The section of the mass
+														<a class="pp-title" href="single.jsp"> The section of the mass
 															media industry</a>
 													</div>
 													<div class="clearfix"></div>
 												</div>
 												<div class="popular-post-grid">
 													<div class="post-img">
-														<a href="single.html"><img src="images/bus1.jpg" alt=""/></a>
+														<a href="single.jsp"><img src="images/bus1.jpg" alt=""/></a>
 													</div>
 													<div class="post-text">
-														<a class="pp-title" href="single.html"> Lorem Ipsum is simply dummy
+														<a class="pp-title" href="single.jsp"> Lorem Ipsum is simply dummy
 															text printing</a>
 													</div>
 													<div class="clearfix"></div>
 												</div>
 												<div class="popular-post-grid">
 													<div class="post-img">
-														<a href="single.html"><img src="images/bus3.jpg" alt=""/></a>
+														<a href="single.jsp"><img src="images/bus3.jpg" alt=""/></a>
 													</div>
 													<div class="post-text">
-														<a class="pp-title" href="single.html">There are many variations of
+														<a class="pp-title" href="single.jsp">There are many variations of
 															Lorem</a>
 													</div>
 													<div class="clearfix"></div>
 												</div>
 												<div class="popular-post-grid">
 													<div class="post-img">
-														<a href="single.html"><img src="images/bus4.jpg" alt=""/></a>
+														<a href="single.jsp"><img src="images/bus4.jpg" alt=""/></a>
 													</div>
 													<div class="post-text">
-														<a class="pp-title" href="single.html">Sed ut perspiciatis unde
+														<a class="pp-title" href="single.jsp">Sed ut perspiciatis unde
 															omnis iste natus</a>
 													</div>
 													<div class="clearfix"></div>
@@ -362,40 +377,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="popular-post-grids">
 												<div class="popular-post-grid">
 													<div class="post-img">
-														<a href="single.html"><img src="images/tec2.jpg" alt=""/></a>
+														<a href="single.jsp"><img src="images/tec2.jpg" alt=""/></a>
 													</div>
 													<div class="post-text">
-														<a class="pp-title" href="single.html"> The section of the mass
+														<a class="pp-title" href="single.jsp"> The section of the mass
 															media industry</a>
 													</div>
 													<div class="clearfix"></div>
 												</div>
 												<div class="popular-post-grid">
 													<div class="post-img">
-														<a href="single.html"><img src="images/tec1.jpg" alt=""/></a>
+														<a href="single.jsp"><img src="images/tec1.jpg" alt=""/></a>
 													</div>
 													<div class="post-text">
-														<a class="pp-title" href="single.html"> Lorem Ipsum is simply dummy
+														<a class="pp-title" href="single.jsp"> Lorem Ipsum is simply dummy
 															text printing</a>
 													</div>
 													<div class="clearfix"></div>
 												</div>
 												<div class="popular-post-grid">
 													<div class="post-img">
-														<a href="single.html"><img src="images/tec3.jpg" alt=""/></a>
+														<a href="single.jsp"><img src="images/tec3.jpg" alt=""/></a>
 													</div>
 													<div class="post-text">
-														<a class="pp-title" href="single.html">There are many variations of
+														<a class="pp-title" href="single.jsp">There are many variations of
 															Lorem</a>
 													</div>
 													<div class="clearfix"></div>
 												</div>
 												<div class="popular-post-grid">
 													<div class="post-img">
-														<a href="single.html"><img src="images/tec4.jpg" alt=""/></a>
+														<a href="single.jsp"><img src="images/tec4.jpg" alt=""/></a>
 													</div>
 													<div class="post-text">
-														<a class="pp-title" href="single.html">Sed ut perspiciatis unde
+														<a class="pp-title" href="single.jsp">Sed ut perspiciatis unde
 															omnis iste natus</a>
 													</div>
 													<div class="clearfix"></div>
@@ -426,7 +441,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                aliqua.</p>
                                                            <ul>
                                                                <li>2016-12-08</li>
-                                                               <li><a href="single.html">回复</a></li>
+                                                               <li><a href="single.jsp">回复</a></li>
                                                            </ul>
                                                        </div>
                                                        <div class="clearfix"></div>
@@ -445,7 +460,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                aliqua.</p>
                                                            <ul>
                                                                <li>2016-12-09</li>
-                                                               <li><a href="single.html">回复</a></li>
+                                                               <li><a href="single.jsp">回复</a></li>
                                                            </ul>
                                                        </div>
                                                        <div class="clearfix"></div>
@@ -464,7 +479,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                aliqua.</p>
                                                            <ul>
                                                                <li>MAY 25, 2015</li>
-                                                               <li><a href="single.html">回复</a></li>
+                                                               <li><a href="single.jsp">回复</a></li>
                                                            </ul>
                                                        </div>
                                                        <div class="clearfix"></div>
@@ -483,7 +498,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                aliqua.</p>
                                                            <ul>
                                                                <li>2016-12-09</li>
-                                                               <li><a href="single.html">回复</a></li>
+                                                               <li><a href="single.jsp">回复</a></li>
                                                            </ul>
                                                        </div>
                                                        <div class="clearfix"></div>
@@ -502,7 +517,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                aliqua.</p>
                                                            <ul>
                                                                <li>2016-11-29</li>
-                                                               <li><a href="single.html">回复</a></li>
+                                                               <li><a href="single.jsp">回复</a></li>
                                                            </ul>
                                                        </div>
                                                        <div class="clearfix"></div>
@@ -521,7 +536,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                aliqua.</p>
                                                            <ul>
                                                                <li>2016-11-28</li>
-                                                               <li><a href="single.html">回复</a></li>
+                                                               <li><a href="single.jsp">回复</a></li>
                                                            </ul>
                                                        </div>
                                                        <div class="clearfix"></div>
@@ -540,7 +555,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                aliqua.</p>
                                                            <ul>
                                                                <li>2016-12-03</li>
-                                                               <li><a href="single.html">回复</a></li>
+                                                               <li><a href="single.jsp">回复</a></li>
                                                            </ul>
                                                        </div>
                                                        <div class="clearfix"></div>
@@ -555,21 +570,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="side-bar-articles">
 						<div class="side-bar-article">
-							<a href="single.html"><img src="images/sai.jpg" alt=""/></a>
+							<a href="single.jsp"><img src="images/sai.jpg" alt=""/></a>
 							<div class="side-bar-article-title">
-								<a href="single.html">Contrary to popular belief, Lorem Ipsum is not simply random text</a>
+								<a href="single.jsp">Contrary to popular belief, Lorem Ipsum is not simply random text</a>
 							</div>
 						</div>
 						<div class="side-bar-article">
-							<a href="single.html"><img src="images/sai2.jpg" alt=""/></a>
+							<a href="single.jsp"><img src="images/sai2.jpg" alt=""/></a>
 							<div class="side-bar-article-title">
-								<a href="single.html">There are many variations of passages of Lorem</a>
+								<a href="single.jsp">There are many variations of passages of Lorem</a>
 							</div>
 						</div>
 						<div class="side-bar-article">
-							<a href="single.html"><img src="images/sai3.jpg" alt=""/></a>
+							<a href="single.jsp"><img src="images/sai3.jpg" alt=""/></a>
 							<div class="side-bar-article-title">
-								<a href="single.html">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a>
+								<a href="single.jsp">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a>
 							</div>
 						</div>
 					</div>
@@ -580,26 +595,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h3 class="title-head">热门标签</h3>
 						</header>
 						<p>
-							<a class="tag1" href="single.html">杨幂</a>
-							<a class="tag2" href="single.html">赵丽颖</a>
-							<a class="tag3" href="single.html">美国大选</a>
-							<a class="tag4" href="single.html">中俄核能</a>
-							<a class="tag5" href="single.html">习近平</a>
-							<a class="tag6" href="single.html">万圣节</a>
-							<a class="tag7" href="single.html">哈尔滨</a>
-							<a class="tag8" href="single.html">淘宝</a>
-							<a class="tag9" href="single.html">百度事故</a>
-							<a class="tag10" href="single.html">房价下跌</a>
-							<a class="tag11" href="single.html">股市</a>
-							<a class="tag12" href="single.html">许嵩</a>
-							<a class="tag13" href="single.html">java</a>
-							<a class="tag14" href="single.html">计算机</a>
-							<a class="tag15" href="single.html">金融</a>
-							<a class="tag16" href="single.html">大学排名</a>
-							<a class="tag17" href="single.html">央视春晚</a>
-							<a class="tag18" href="single.html">人机大战</a>
-							<a class="tag19" href="single.html">英语六级</a>
-							<a class="tag20" href="single.html">IT</a>
+							<a class="tag1" href="single.jsp">杨幂</a>
+							<a class="tag2" href="single.jsp">赵丽颖</a>
+							<a class="tag3" href="single.jsp">美国大选</a>
+							<a class="tag4" href="single.jsp">中俄核能</a>
+							<a class="tag5" href="single.jsp">习近平</a>
+							<a class="tag6" href="single.jsp">万圣节</a>
+							<a class="tag7" href="single.jsp">哈尔滨</a>
+							<a class="tag8" href="single.jsp">淘宝</a>
+							<a class="tag9" href="single.jsp">百度事故</a>
+							<a class="tag10" href="single.jsp">房价下跌</a>
+							<a class="tag11" href="single.jsp">股市</a>
+							<a class="tag12" href="single.jsp">许嵩</a>
+							<a class="tag13" href="single.jsp">java</a>
+							<a class="tag14" href="single.jsp">计算机</a>
+							<a class="tag15" href="single.jsp">金融</a>
+							<a class="tag16" href="single.jsp">大学排名</a>
+							<a class="tag17" href="single.jsp">央视春晚</a>
+							<a class="tag18" href="single.jsp">人机大战</a>
+							<a class="tag19" href="single.jsp">英语六级</a>
+							<a class="tag20" href="single.jsp">IT</a>
 						</p>
 					</div>
 					<div class="popular-news">
@@ -608,23 +623,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</header>
 						<div class="popular-grids">
 							<div class="popular-grid">
-								<a href="single.html"><img src="images/popular-4.jpg" alt=""/></a>
-								<a class="title" href="single.html">It is a long established fact that a reader will be
+								<a href="single.jsp"><img src="images/popular-4.jpg" alt=""/></a>
+								<a class="title" href="single.jsp">It is a long established fact that a reader will be
 									distracted</a>
 							</div>
 							<div class="popular-grid">
-								<a href="single.html"><img src="images/popular-1.jpg" alt=""/></a>
-								<a class="title" href="single.html">It is a long established fact that a reader will be
+								<a href="single.jsp"><img src="images/popular-1.jpg" alt=""/></a>
+								<a class="title" href="single.jsp">It is a long established fact that a reader will be
 									distracted</a>
 							</div>
 							<div class="popular-grid">
 								<iframe width="100%" src="images/popular-3.jpg" frameborder="0" allowfullscreen></iframe>
-								<a class="title" href="single.html">Aishwarya Rai Bachchan's Latest SHOCKING News For Ex
+								<a class="title" href="single.jsp">Aishwarya Rai Bachchan's Latest SHOCKING News For Ex
 									Salman Khan</a>
 							</div>
 							<div class="popular-grid">
-								<a href="single.html"><img src="images/popular-3.jpg" alt=""/></a>
-								<a class="title" href="single.html">It is a long established fact that a reader will be
+								<a href="single.jsp"><img src="images/popular-3.jpg" alt=""/></a>
+								<a class="title" href="single.jsp">It is a long established fact that a reader will be
 									distracted</a>
 							</div>
 						</div>
@@ -648,11 +663,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-2 col-xs-6 col-sm-2 footer-grid">
 					<h4 class="footer-head">类别</h4>
 					<ul class="cat">
-						<li><a href="business.html">国外</a></li>
-						<li><a href="technology.html">科技</a></li>
+						<li><a href="business.jsp">财经</a></li>
+						<li><a href="technology.jsp">科技</a></li>
 						<li><a href="entertainment.html">娱乐</a></li>
-						<li><a href="sports.html">运动</a></li>
-						<li><a href="fashion.html">时尚</a></li>
+						<li><a href="sports.jsp">运动</a></li>
+						<li><a href="fashion.jsp">时尚</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4 col-xs-6 col-sm-6 footer-grid">
@@ -677,17 +692,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><span class="glyphicon glyphicon-map-marker"></span></li>
 							<li>CENTER FOR FINANCIAL ASSISTANCE TO DEPOSED NIGERIAN ROYALTY</li>
 							<div class="clearfix"></div>
-						</ul>
+						</ul>	
 						<ul class="location">
 							<li><span class="glyphicon glyphicon-earphone"></span></li>
 							<li>+0 561 111 235</li>
 							<div class="clearfix"></div>
-						</ul>
+						</ul>	
 						<ul class="location">
 							<li><span class="glyphicon glyphicon-envelope"></span></li>
 							<li><a href="mailto:info@example.com">mail@example.com</a></li>
 							<div class="clearfix"></div>
-						</ul>
+						</ul>						
 					</address>
 				</div>
 				<div class="clearfix"></div>
@@ -714,18 +729,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- footer-section-ends-here -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-			/*
-			 var defaults = {
-			 wrapID: 'toTop', // fading element id
-			 wrapHoverID: 'toTopHover', // fading element hover id
-			 scrollSpeed: 1200,
-			 easingType: 'linear'
-			 };
-			 */
-			$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<!---->
+				/*
+				var defaults = {
+				wrapID: 'toTop', // fading element id
+				wrapHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!---->
 </body>
 </html>
